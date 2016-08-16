@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Booking</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<!--<div class="header col-12">
+		<form>
+			<div class="col-6">
+				<img src="images/logo2.jpg" width="80px;" height="80px;">&nbsp;<span style="color:#d3d5ff;font-size:24px;font-weight:bold;font-family:Arial">Smart Agents</span>
+			</div>
+			<div class="col-6">
+				<input type="text" placeholder="Search" class="col-10 srch_box">
+				<a href="#"><img src="images/search_icon.png"></a>
+			</div>
+		</form>
+	</div>-->
+
+	<div class="row">
+		<div class="col-3 div2"><img src="images/hello.jpg" width="280px" height="340px" style="margin-top:30px;"></div>
+		<div class="col-9 div2">
+			<h3>Hello Mike, How may I help you?</h3>
+			<textarea cols="50" rows="8"></textarea><br>
+			<button onclick="showData()">Go</button>		
+		</div>
+		<div id="data" style="display:none;">
+			<div class="col-9 div2">Morning flights from Bangalore to Mumbai for coming Monday</div>
+			<div class="col-5">		
+				<table width="100%">
+				<tr>
+				<th class="col-25">Flight</th>
+				<th class="col-25">Departure</th>
+				<th class="col-25">Arrival</th>
+				<th class="col-25">Price</th>
+				</tr>
+				<tr>
+				<td class="col-25"><img src="images/flight1.jpg" width="50px" height="50px"></td>
+				<td class="col-25">6.00 AM</td>
+				<td class="col-25">7.30 AM<br><a href="#">Details</a></td>
+				<td class="col-25">Rs. 2,500<br><button onclick="msgAlert()">Book</button></td>
+				</tr>
+				<tr>
+				<td class="col-25"><img src="images/flight2.jpg" width="50px" height="50px"></td>
+				<td class="col-25">6.30 AM</td>
+				<td class="col-25">8.00 AM<br><a href="#">Details</td>
+				<td class="col-25">Rs. 2,700<br><button>Book</button></td>
+				</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+	</div>
+	<script>
+		function showData(){
+			document.getElementById("data").style.display = "block";
+		}	
+		function msgAlert(){
+			var x = confirm('This flight service had frequent delays and cancellations in the recent past. Do you still want to go ahead?');
+			if(x == true){
+				document.getElementById("data").innerHTML="Flight booked successfully."
+			}else{
+				return 0;
+			}
+		}
+	</script>
+</body>
+</html>
+
