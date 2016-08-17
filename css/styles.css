@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;  
+}
+html {
+    font-family: "Times New Roman";
+}
+.header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 10px 15px 10px 20px;
+}
+.srch_box{
+	border-radius:5px;
+	height:40px;
+	padding-left:8px;
+}
+.logo{
+	font-size:24px;
+	color: #e5e5e5;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+}
+.menu li {
+	float:left;
+	width:100%;
+	display:block;
+    padding: 15px;
+    margin-bottom: 15px;   
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #e5e5e5;
+}
+.bot_heading{
+	font-size: 20px;
+	color:#9933cc;
+	text-decoration:none;
+}
+.bot_desc{
+	font-size: 14px;
+}
+.div1{
+	padding:40px 0 30px 30px;
+}
+.div2{
+	padding:0px 0 30px 30px;
+}
+.submit, button{
+	cursor:pointer;
+	font-size:18px;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+/* For flight table data: */
+[class*="col-25"] {
+    width: 25%;
+	text-align:center;
+	vertical-align:middle;
+	padding:5px;
+	font-size:16px;
+}
+.footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
